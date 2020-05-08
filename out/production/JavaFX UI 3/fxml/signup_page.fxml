@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="854.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupPage">
+    <children>
+        <AnchorPane layoutX="472.0" prefHeight="580.0" prefWidth="383.0" style="-fx-background-color: #0C4B82;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="472.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" layoutX="60.0" layoutY="214.0" prefHeight="75.0" prefWidth="262.0" text="Cinema" textFill="WHITE">
+                    <font>
+                        <Font name="Segoe UI" size="50.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="97.0" layoutY="53.0" prefHeight="397.0" prefWidth="283.0" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="97.0" AnchorPane.rightAnchor="474.0" AnchorPane.topAnchor="53.0">
+            <children>
+                <TextField fx:id="txtLogin" layoutX="4.0" layoutY="156.0" prefHeight="34.0" prefWidth="275.0" promptText="login" />
+                <PasswordField fx:id="txtPassword" layoutX="4.0" layoutY="204.0" prefHeight="34.0" prefWidth="275.0" promptText="password" stylesheets="@../css/fullpackstyling.css" />
+                <Button fx:id="btnSignin" layoutX="4.0" layoutY="292.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" stylesheets="@../css/fullpackstyling.css" text="Sign in" />
+                <Button fx:id="btnFB" layoutX="4.0" layoutY="337.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #0C4B82;" text="Sign in with Facebook" textFill="WHITE" />
+            <TextField fx:id="txtName" layoutX="4.0" layoutY="14.0" prefHeight="34.0" prefWidth="275.0" promptText="name" />
+            <TextField fx:id="txtSurname" layoutX="4.0" layoutY="61.0" prefHeight="34.0" prefWidth="275.0" promptText="surname" />
+            <Line endX="150.0" layoutX="116.0" layoutY="265.0" startX="-100.0" stroke="#000000c6" />
+            <ChoiceBox fx:id="txtGender" layoutX="4.0" layoutY="107.0" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #ffffff; -fx-border-color: silver;">
+                <items>
+                    <FXCollections fx:factory="observableArrayList">
+                        <String fx:value="Man" />
+                        <String fx:value="Woman" />
+                    </FXCollections>
+                </items>
+            </ChoiceBox>
+            </children>
+        </Pane>
+        <Button fx:id="btnexit" layoutX="821.0" layoutY="14.0" mnemonicParsing="false" onAction="#exit" prefHeight="23.0" prefWidth="23.0" stylesheets="@../css/fullpackstyling.css" text="✘" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
+          <Button fx:id="btnSignup" layoutX="355.0" layoutY="18.0" mnemonicParsing="false" onAction="#signup" prefHeight="34.0" prefWidth="100.0" style="-fx-border-radius: 50; -fx-background-radius: 50;" stylesheets="@../css/fullpackstyling.css" text="Sign up" />
+    </children>
+</AnchorPane>
